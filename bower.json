@@ -1,0 +1,26 @@
+{
+  "name": "learn-express",
+  "description": "Learning node and express basics",
+  "main": "index.js",
+  "authors": [
+    "Morris Mukiri <morrismukiri@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "learn",
+    "nodejs",
+    "express",
+    "beginner",
+    "tutorial"
+  ],
+  "homepage": "https://github.com/morrismukiri/learn-express",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
