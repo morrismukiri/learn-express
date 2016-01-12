@@ -2,6 +2,17 @@ doctype html
 html
   head
     title= title
+    
+    meta(meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no')
+    link( rel='stylesheet' href='/lib/angular-material/angular-material.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+  body(ng-app="YourApp")
+
+    div(ng-controller="home")
+
+
     block content
+    script( src='/lib/angular/angular.js')
+    script( src='/lib/angular-aria/angular-aria.js')
+    script( src='/lib/angular-animate/angular-animate.js')
+    script( src='/lib/angular-material/angular-material.js')
