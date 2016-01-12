@@ -6,13 +6,14 @@ html
     meta(meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no')
     link( rel='stylesheet' href='/lib/angular-material/angular-material.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body(ng-app="YourApp")
+  body(ng-app="learn-express")
 
     div(ng-controller="home")
-
-
-    block content
+        div(layout="column")
+            {{time | date:'medium'}}
+        block content
     script( src='/lib/angular/angular.js')
     script( src='/lib/angular-aria/angular-aria.js')
     script( src='/lib/angular-animate/angular-animate.js')
     script( src='/lib/angular-material/angular-material.js')
+    script(src='/javascripts/app.js')
