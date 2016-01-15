@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    div
+        table
+            tr
+                th Name
+                th Price
+            each product in products
+                tr
+                    td= product.name
+                    td= product.price
+            
+                    
+                
