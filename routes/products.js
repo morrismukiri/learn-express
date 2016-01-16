@@ -18,13 +18,13 @@ router.get('/', function (req, res, next) {
                         {
                             products: results
                         }
-                        )
+                        );
                 }
 
-            })
+            });
         }
 
-    })
+    });
     // res.send('respond with a useful resource');
 });
 router.get('/edit/:id', function (req, res, next) {

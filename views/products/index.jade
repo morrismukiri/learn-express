@@ -6,10 +6,20 @@ block content
             tr
                 th Name
                 th Price
+                th Edit
+                th Delete
             each product in products
                 tr
                     td= product.name
                     td= product.price
+                    td
+                        md-button.md-icon-button(href="edit/"+ product._id)
+                             ng-md-icon.icon-default(icon='edit', title="Edit") 
+                    td
+                        md-button.md-icon-button(action="delete("+product._id+")",class="") 
+                             ng-md-icon(icon='delete',style="fill: blue", title="Delete")
+                       
+                           
             
                     
                 
