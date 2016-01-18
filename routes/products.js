@@ -32,6 +32,6 @@ router.get('/edit/:id', function (req, res, next) {
     res.send('Edit Product');
 });
 router.get('/add', function (req, res, next) {
-    res.send('Add Product');
+    res.render('products/add');
 });
 module.exports = router;
