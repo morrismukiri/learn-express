@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb').MongoClient;
+// var bodyParser = require('body-parser');
+// var multer = require('multer'); // v1.0.5
+// var upload = multer(); // for parsing multipart/form-data
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
@@ -32,6 +35,16 @@ router.get('/edit/:id', function (req, res, next) {
     res.send('Edit Product');
 });
 router.get('/add', function (req, res, next) {
-    res.render('products/add');
+    res.render('products/add',{
+        title:"Add Product"
+    });
+});
+router.post('/add', function (req, res, next) {
+    console.log('-------');
+    // console.log(req);
+    var name = req.body.name;
+    res.json(req.body);
+    console.log(name);
+    // res.render('products/add');
 });
 module.exports = router;

@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-    form
+    form(method="post" action="")
         div(layout-gt-sm="row" layout-padding)
       
             md-input-container.md-block(md-no-float='md-no-float')
@@ -10,4 +10,5 @@ block content
             md-input-container.md-block(md-no-float='')
                 label Product Price
                 input#price(type='number', name='price')
-        md-button.md-raised.md-primary Add
+            md-input-container.md-block(md-no-float='')
+                input.md-button.md-raised.md-primary(type='submit',value="save")
