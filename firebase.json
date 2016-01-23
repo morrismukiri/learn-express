@@ -1,0 +1,9 @@
+{
+  "firebase": "learn-express",
+  "public": "./",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
