@@ -12,10 +12,10 @@ router.post('/login', function(req, res, next) {
   res.render('/users/login');
 });
 router.get('/signup', function(req, res, next) {
-  res.send('respond with a useful resource');
+  res.render('/users/signup');
 });
 router.post('/signup', function(req, res, next) {
-  res.send('respond with a useful resource');
+  res.render('/users/signup');
 });
 
 module.exports = router;
