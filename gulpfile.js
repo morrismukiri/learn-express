@@ -23,6 +23,7 @@ gulp.task('serve', ['style'], function () {
 	return nodemon(options)
 			.on('start',function (ev) {
 				console.log('==================\nserver started...\n==================');
+				console.log("Running on port 8080")
 			})
 			.on('restart',function (ev) {
 				console.log('===============\nServer restarted\n===============');

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/learnExpress';
+var url = 'mongodb://127.0.0.1:27017/learnExpress';
 /* GET users listing. */
 router.get('/', function (req, res, next) {
     mongodb.connect(url, function (err, db) {
