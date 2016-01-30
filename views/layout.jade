@@ -10,6 +10,10 @@ html
   body(ng-app="learn-express")
 
     div(ng-controller="home")
+        div(class="top-menu")
+             md-button.md-raised.md-info(href="/" class="") Home
+             md-button.md-raised.md-info(href="products" class="") Products
+                
         div(layout="column")
             {{time | date:'medium'}}
         block content
